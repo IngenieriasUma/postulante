@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ingenierías UMA 2027 · Elige tu carrera</title>
+<meta name="description" content="Conoce el perfil, campo laboral, malla curricular y certificaciones de las ingenierías de la Universidad María Auxiliadora.">
+<style>
+:root{--brand:#EC244F;--wine:#7E0225;--deep:#470C28;--bg:#F7F3F4;--sf:#fff;--tx:#2a1119;--mu:#6b4b56;--ac:#7E0225;--bd:#ead9de;--tint:#fde8ed;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#190a11;--sf:#27121b;--tx:#f6e9ed;--mu:#c9a9b4;--ac:#ff7f9c;--bd:#4a2433;--tint:#3a1727}}
+:root[data-theme="dark"]{--bg:#190a11;--sf:#27121b;--tx:#f6e9ed;--mu:#c9a9b4;--ac:#ff7f9c;--bd:#4a2433;--tint:#3a1727}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--tx)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--deep);z-index:10}
+a{color:inherit}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+.sh{font-size:clamp(1.5rem,3.5vw,2.1rem);color:var(--ac)}
+.lead{color:var(--mu);max-width:62ch;margin:0 0 28px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--deep);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;letter-spacing:.5px;text-decoration:none}
+.logo b{color:var(--brand)}
+nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:10px 14px;border-radius:99px;text-decoration:none;font-size:.95rem}
+nav a:hover,nav a:focus-visible{background:rgba(255,255,255,.14)}
+#bg{display:none;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:10px;padding:8px 12px;font:inherit;cursor:pointer}
+.hero{background:radial-gradient(circle at 85% 10%,rgba(236,36,79,.55),transparent 45%),linear-gradient(135deg,var(--deep),var(--wine));color:#fff;padding:72px 0 64px}
+.hero h1{font-size:clamp(2rem,6vw,3.6rem);max-width:15ch}
+.hero h1 span{color:#ff8fa8}
+.hero p{max-width:56ch;font-size:1.1rem;opacity:.92}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 0}
+.chips span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 14px;border-radius:99px;font-size:.9rem}
+.btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;border:0;border-radius:99px;padding:13px 26px;text-decoration:none;cursor:pointer;font-size:1rem;margin-top:26px}
+.btn:hover{background:#d11a43}
+.btn.o{background:transparent;border:2px solid currentColor;color:var(--ac)}
+:focus-visible{outline:3px solid #ff8fa8;outline-offset:2px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.cc{background:var(--sf);border:2px solid var(--bd);border-radius:18px;padding:22px;text-align:left;cursor:pointer;font:inherit;color:inherit;transition:.2s}
+.cc:hover{transform:translateY(-3px);border-color:var(--brand)}
+.cc[aria-pressed="true"]{border-color:var(--brand);background:var(--tint);box-shadow:0 6px 22px rgba(236,36,79,.25)}
+.ic{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--brand);color:#fff;font-weight:800;margin-bottom:12px}
+.cc h3{color:var(--ac);font-size:1.15rem}
+.cc p{margin:0;color:var(--mu);font-size:.93rem}
+details.q{margin-top:22px;background:var(--sf);border:1px dashed var(--brand);border-radius:16px;padding:14px 20px}
+details.q summary{cursor:pointer;font-weight:700;color:var(--ac)}
+.qq{margin:16px 0}
+.qq label{display:block;padding:8px 12px;border:1px solid var(--bd);border-radius:10px;margin:6px 0;cursor:pointer}
+.qq label:has(input:checked){background:var(--tint);border-color:var(--brand)}
+#qr{font-weight:600;color:var(--ac);margin-top:14px}
+#det{background:var(--sf);border-top:4px solid var(--brand)}
+.dh{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:18px}
+.dh h2{font-size:clamp(1.6rem,4vw,2.4rem);color:var(--ac);margin:0}
+.dh p{margin:4px 0 0;color:var(--mu)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;border-bottom:2px solid var(--bd);margin-bottom:26px}
+.tabs button{flex:none;background:none;border:0;border-radius:99px;padding:10px 18px;font:inherit;font-weight:600;color:var(--mu);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--brand);color:#fff}
+.g2{display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+.box{background:var(--bg);border:1px solid var(--bd);border-radius:16px;padding:20px}
+.box h3{color:var(--ac);font-size:1.05rem}
+.box p:last-child{margin-bottom:0}
+.jobs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;list-style:none;padding:0;margin:0 0 18px}
+.jobs li{background:var(--bg);border:1px solid var(--bd);border-left:5px solid var(--brand);border-radius:12px;padding:14px 16px}
+.note{background:var(--tint);border-radius:14px;padding:16px 20px;color:var(--ac);font-weight:600}
+.ben{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:18px}
+.ben div{background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:16px}
+.ben b{display:block;color:var(--ac)}
+.ben small{color:var(--mu)}
+.tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
+.tools input{flex:1 1 220px;padding:11px 16px;border-radius:99px;border:2px solid var(--bd);background:var(--bg);color:var(--tx);font:inherit}
+.malla{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
+.cy{background:var(--bg);border:1px solid var(--bd);border-radius:14px;overflow:hidden}
+.cy h4{margin:0;padding:8px 12px;background:var(--wine);color:#fff;font-size:.9rem;letter-spacing:.5px}
+.cy ul{margin:0;padding:10px 12px 12px;list-style:none;font-size:.88rem}
+.cy li{padding:5px 0;border-bottom:1px dotted var(--bd)}
+.cy li:last-child{border:0}
+.cy li.hit{background:#ffe28a;color:#3a1727;border-radius:6px;padding:5px 6px;font-weight:700}
+.cy.dim{opacity:.35}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:3px solid var(--brand)}
+.tl li{position:relative;margin-bottom:16px;background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:14px 18px}
+.tl li::before{content:"";position:absolute;left:-32px;top:20px;width:15px;height:15px;border-radius:50%;background:var(--brand);border:3px solid var(--sf)}
+.tg{display:inline-block;background:var(--brand);color:#fff;font-size:.78rem;font-weight:700;padding:2px 10px;border-radius:99px;margin-bottom:6px}
+.tl h4{margin:0 0 4px;color:var(--ac)}
+.tl ul{margin:6px 0 0;padding-left:18px;color:var(--mu);font-size:.92rem}
+.tl p{margin:0;color:var(--mu);font-size:.92rem}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.cmp article{background:var(--sf);border:1px solid var(--bd);border-radius:18px;padding:22px;border-top:5px solid var(--brand)}
+.cmp h3{color:var(--ac)}
+.cmp dt{font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.6px;color:var(--mu);margin-top:12px}
+.cmp dd{margin:2px 0 0}
+.wy{background:var(--deep);color:#fff}
+.wy .sh{color:#ff8fa8}
+.wy .lead{color:#e8c8d2}
+.wg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.wg div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:16px}
+.wg b{display:block;color:#ffb3c4}
+footer{background:#2a0716;color:#e8c8d2;padding:30px 0;font-size:.9rem}
+footer b{color:#fff}
+@media(max-width:820px){
+#bg{display:block}
+nav ul{display:none;position:absolute;left:0;right:0;top:60px;flex-direction:column;background:var(--deep);padding:10px 20px 16px}
+nav ul.open{display:flex}
+.g2{grid-template-columns:1fr}
+section{padding:42px 0}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+<a class="logo" href="#inicio">UMA <b>Ingeniería</b> 2027</a>
+<button id="bg" aria-expanded="false" aria-controls="menu">Menú</button>
+<nav aria-label="Principal"><ul id="menu">
+<li><a href="#carreras">Carreras</a></li><li><a href="#comparar">Comparar</a></li><li><a href="#porque">Por qué UMA</a></li></ul></nav>
+</div></header>
+
+<main id="inicio">
+<div class="hero"><div class="w">
+<h1>¿Quién quieres <span>ser hoy?</span></h1>
+<p>Formamos ingenieros para un mundo más humano y tecnológico. Explora cada carrera de la Facultad de Ingeniería y compara perfil, campo laboral, malla y certificaciones antes de decidir.</p>
+<div class="chips"><span>3 carreras</span><span>10 ciclos</span><span>Inicio: abril 2027-1</span></div>
+<a class="btn" href="#carreras">Elegir mi carrera</a>
+</div></div>
+
+<section id="carreras"><div class="w">
+<h2 class="sh">Selecciona una carrera</h2>
+<p class="lead">Toca una tarjeta para ver toda su información. ¿No estás seguro? Responde el test rápido.</p>
+<div class="cards" id="cards"></div>
+<details class="q"><summary>Test rápido: ¿cuál va conmigo?</summary>
+<div id="qs"></div><button class="btn o" id="qb" type="button">Ver resultado</button><div id="qr" aria-live="polite"></div></details>
+</div></section>
+
+<section id="det" aria-live="polite"><div class="w">
+<div class="dh"><div><h2 id="dt"></h2><p id="dg"></p></div><a class="btn o" href="#comparar" style="margin:0">Comparar carreras</a></div>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div id="pn" role="tabpanel" tabindex="0"></div>
+</div></section>
+
+<section id="comparar"><div class="w">
+<h2 class="sh">Cómo se diferencia cada carrera</h2>
+<p class="lead">Un mismo reto, tres formas de resolverlo: ayudar a una empresa a optimizar sus rutas de reparto.</p>
+<div class="cmp" id="cmp"></div>
+</div></section>
+
+<section id="porque" class="wy"><div class="w">
+<h2 class="sh">¿Por qué estudiar ingeniería en la UMA?</h2>
+<p class="lead">Tus trabajos no son solo para aprobar cursos: son para concursar y emprender. Nosotros no compramos tecnología, la creamos.</p>
+<div class="wg" id="wg"></div>
+<p style="margin-top:24px">Estudiantes de la UMA ya destacan: <b>2.º puesto en “Hackaton”</b> (S/ 5,500.00, 5.º ciclo) y <b>1.er puesto en “Feria Emprendedora”</b> (S/ 7,500.00, 6.º ciclo).</p>
+</div></section>
+</main>
+
+<footer><div class="w"><p><b>Universidad María Auxiliadora · Facultad de Ingeniería.</b> Inicio de clases: abril 2027-1.</p>
+<p>*Certificaciones y microcertificaciones sujetas a actualizaciones para potenciar tu empleabilidad.</p></div></footer>
+
+<script>
+const SH={tag:"Aprende | Certifícate | Potencia tu futuro"};
+const D={
+ia:{n:"Ingeniería de Inteligencia Artificial",ab:"IA",tag:"Crea soluciones inteligentes que aprenden de los datos y resuelven problemas reales.",
+d:"El Ingeniero de Inteligencia Artificial de la UMA desarrolla soluciones innovadoras con machine learning, visión computacional y análisis de datos para transformar industrias y crear tecnología del futuro.",
+foco:"IA, Machine Learning, ciencia de datos, IA generativa y soluciones inteligentes",
+comp:"Programación, análisis de datos, aprendizaje automático e innovación, para diseñar soluciones inteligentes con impacto en diversos sectores.",
+sl:"Pasar de utilizar herramientas de IA a diseñar, desarrollar, evaluar e implementar soluciones de inteligencia artificial.",
+reto:"Crea una solución inteligente al sistema de alertas y notificaciones en tiempo real; hace que el sistema aprenda brindando rutas alternas.",
+jobs:["Desarrollador de soluciones de IA, asistentes virtuales, chatbots y búsqueda inteligente","Analista de datos e Inteligencia de Negocios","Innovador empresarial con prototipos inteligentes (sensores)","Gerente de seguridad de aplicaciones inteligentes","Jefe de soluciones tecnológicas","Consultor de IA para negocios"],
+cert:[["I – III","Programación y Análisis de Datos para Inteligencia Artificial",["Fundamentos de programación y matemática","Análisis de datos para identificar patrones","Introducción a la Inteligencia Artificial"]],["IV – VI","Desarrollo de Soluciones de Machine Learning y Ciencia de Datos",["Preparación y análisis de datos","Implementación de algoritmos de ML","Evaluación de modelos y comunicación de resultados"]],["VIII – IX","Ingeniería de Soluciones Inteligentes y Aplicaciones Avanzadas de IA",["IA generativa y modelos inteligentes","Metodologías ágiles y desarrollo de software","Ciberseguridad aplicada a IA"]]],
+mic:[["I – II","Programación y Pensamiento Computacional para IA","Programa funcional"],["III – IV","Análisis de Datos y Desarrollo de Aplicaciones","Aplicación que analiza y presenta datos"],["V – VI","Machine Learning y Modelamiento Predictivo","Modelo predictivo con métricas"],["VII – VIII","IA Generativa, Cloud y Aplicaciones Inteligentes","Aplicación con IA generativa y seguridad"],["IX – X","Soluciones Avanzadas de IA e Innovación Tecnológica","Proyecto integrador / MVP"]],
+m:["Matemática I|Comunicación|Inglés I|Introducción a la Inteligencia Artificial|Desarrollo Personal y Social|Fundamentos de programación","Matemática II|Inglés II|Liderazgo|Fundamentos de Derecho|Matemáticas Discretas|Sistemas Operativos","Estadística General|Cultura Emprendedora|Fundamentos de Contabilidad y Finanzas|Análisis de Datos para Negocios|Cálculo y Álgebra Lineal|Programación Orientada a Objetos","Fundamentos de Marketing|Microeconomía y Macroeconomía|Probabilidad y Estadística|Gestión del Talento Humano|Introducción al Machine Learning|Arquitectura de Computadoras","Gestión de la Calidad|Estructura de datos y algoritmos|Principios de Ingeniería de Software|Algoritmos Avanzados y Complejidad|Procesamiento de Lenguaje Natural","Finanzas Aplicadas|Ciencia de Datos con IA|Sistemas de Gestión de Base de Datos|Deep Learning|Ingeniería de Software para IA","Metodología de la Investigación Científica I|Ética y Responsabilidad Social|Electivo I|Reinforcement Learning|Inteligencia Artificial para Internet de las Cosas","Metodología de la Investigación Científica II|Metodologías Ágiles|Cloud Computing y Big Data|IA Generativa y Redes Generativas Antagónicas|AI for Cybersecurity","Trabajo de Investigación I|Formulación de Proyecto Emprendedor|Transformación Digital|Electivo II|Negocios Disruptivos","Trabajo de Investigación II|Implementación de Proyecto Emprendedor|Prácticas PreProfesionales"],
+g:"Bachiller en Ingeniería de Inteligencia Artificial",t:"Ingeniero(a) de Inteligencia Artificial"},
+sis:{n:"Ingeniería de Sistemas e Informática",ab:"SI",tag:"Diseña, desarrolla e integra sistemas y soluciones tecnológicas para las organizaciones.",
+d:"El Ingeniero de Sistemas e Informática de la UMA diseña, implementa y gestiona sistemas informáticos, software y redes que impulsan la transformación digital de las organizaciones.",
+foco:"Software, bases de datos, arquitectura, cloud y sistemas empresariales",
+comp:"Diseñar sistemas de información, desarrollar aplicaciones, administrar datos e infraestructura tecnológica y gestionar proyectos de soluciones digitales.",
+sl:"Ingeniería de software y sistemas empresariales con énfasis en cloud, datos, arquitectura y transformación digital.",
+reto:"Diseña, desarrolla e implementa un sistema de mapas para visualizar la ruta recorrida, medir tiempos y mostrar indicadores en reportes e informes gerenciales.",
+jobs:["Desarrollador de software de aplicaciones y web","Analista de bases de datos","Jefe de infraestructura TI","Consultor de soluciones tecnológicas y gestor de iniciativas de innovación","Gerente de Arquitectura Cloud y Telecomunicaciones","Coordinador de Centro de Sistemas en organismos públicos y privados que implementen soluciones de TI"],
+cert:[["I – III","Programación, Datos y Fundamentos de Sistemas Informáticos",["Resolución de problemas mediante programación","Lógica, matemática discreta y estadística","Funcionamiento de sistemas informáticos"]],["IV – VI","Desarrollo de Aplicaciones, Bases de Datos y Redes",["Desarrollo de aplicaciones y estructuras de datos","Diseño e implementación de bases de datos","Redes y arquitectura computacional"]],["VIII – IX","Ingeniería de Software y Soluciones Empresariales Digitales",["Requisitos y diseño de soluciones","Metodologías ágiles y gestión de proyectos","Integración cloud y servicios tecnológicos"]]],
+mic:[["I – II","Programación y Fundamentos de Sistemas Informáticos","Programa funcional"],["III – IV","Desarrollo de Aplicaciones y Modelamiento de Sistemas","Aplicación con modelo documentado"],["V – VI","Bases de Datos, Redes y Arquitectura Informática","Aplicación conectada a base de datos y evidencias de configuración de red"],["VII – VIII","Ingeniería de Requisitos y Soluciones Cloud","Diseño de solución tecnológica y documentación"],["IX – X","Desarrollo de Software y Transformación Digital","Proyecto integrador desplegado y documentado"]],
+m:["Matemática I|Comunicación|Inglés I|Introducción a la Inteligencia Artificial|Desarrollo Personal y Social|Fundamentos de programación","Matemática II|Inglés II|Liderazgo|Fundamentos de Derecho|Matemáticas Discretas|Sistemas Operativos","Estadística General|Cultura Emprendedora|Fundamentos de Contabilidad y Finanzas|Análisis de Datos para Negocios|Cálculo y Álgebra Lineal|Lenguaje de Programación","Fundamentos de Marketing|Microeconomía y Macroeconomía|Probabilidad y Estadística|Gestión del Talento Humano|Análisis y Modelamiento de Sistemas|Arquitectura de Computadoras","Gestión de la Calidad|Investigación de Operaciones|Estructura de datos y algoritmos|Teoría General de Sistemas|Base de Datos I","Finanzas Aplicadas|Ciencia de Datos con IA|Base de Datos II|Redes de Computadoras|Arquitectura Empresarial","Metodología de la Investigación Científica I|Ética y Responsabilidad Social|Electivo I|Interacción Humano Computador|Análisis y Confiabilidad de Sistemas","Metodología de la Investigación Científica II|Metodologías Ágiles|Cloud Computing y Big Data|Ingeniería de Requisitos|Gerencia de Proyectos SI/TI","Trabajo de Investigación I|Formulación de Proyecto Emprendedor|Transformación Digital|Electivo II|Desarrollo Web","Trabajo de Investigación II|Implementación de Proyecto Emprendedor|Prácticas Preprofesionales"],
+g:"Bachiller en Ingeniería de Sistemas e Informática",t:"Ingeniero(a) de Sistemas e Informática"},
+ind:{n:"Ingeniería Industrial",ab:"IND",tag:"Diseña operaciones más eficientes, competitivas y sostenibles.",
+d:"El Ingeniero Industrial de la UMA optimiza procesos, mejora la productividad y gestiona recursos para hacer más eficientes las operaciones de empresas y organizaciones.",
+foco:"Calidad, optimización, logística, operaciones y transformación industrial",
+comp:"Optimizar operaciones, gestionar procesos, mejorar la calidad, analizar costos y recursos, y liderar proyectos de transformación productiva con apoyo de datos y tecnología.",
+sl:"Ingeniería Industrial orientada a operaciones inteligentes, eficiencia, analítica y gestión de proyectos.",
+reto:"Diseña la ruta más eficiente, optimiza tiempo y combustible, y realiza una mejora de procesos con calidad.",
+jobs:["Gerente de Operaciones","Jefe de Logística","Gerente de Proyectos Industriales","Jefe de Costos y Presupuestos","Jefe de Gestión de la Calidad","Jefe de Inteligencia de Negocios"],
+cert:[["I – III","Análisis de Datos y Fundamentos de Gestión Empresarial",["Análisis estadístico y matemático","Principios de administración y economía","Interpretación de información contable y financiera"]],["IV – VI","Gestión de Calidad, Métodos y Optimización de Operaciones",["Control de calidad y mejora de procesos","Investigación de operaciones","Análisis de costos y logística"]],["VIII – IX","Gestión Integral de Operaciones y Proyectos Industriales",["Gestión de proyectos y recursos","Integración de información financiera y operativa","Innovación y transformación digital"]]],
+mic:[["I – II","Fundamentos de Gestión y Análisis Empresarial","Diagnóstico de una empresa con indicadores"],["III – IV","Analítica de Datos y Costos para la Toma de Decisiones","Informe de análisis de datos y costos"],["V – VI","Calidad, Logística y Optimización de Operaciones","Propuesta de mejora de una operación"],["VII – VIII","Mejora Continua y Gestión de Proyectos Industriales","Proyecto de mejora con planificación y métricas"],["IX – X","Excelencia Operacional y Transformación Digital Industrial","Proyecto integrador de digitalización o innovación operacional"]],
+m:["Matemática I|Comunicación|Inglés I|Introducción a la Inteligencia Artificial|Desarrollo Personal y Social|Introducción a la Ingeniería Industrial","Matemática II|Inglés II|Liderazgo|Fundamentos de Derecho|Introducción a la Administración|Ingeniería Económica","Estadística General|Cultura Emprendedora|Fundamentos de Contabilidad y Finanzas|Análisis de Datos para Negocios|Cálculo I|Química General","Fundamentos de Marketing|Microeconomía y Macroeconomía|Contabilidad de Costos|Gestión del Talento Humano|Cálculo II","Gestión de la Calidad|Investigación de Mercados|Investigación de Operaciones I|Sistemas de Gestión de Base de Datos|Física","Finanzas Aplicadas|Ciencia de Datos con IA|Investigación de Operaciones II|Logística Integrada y Cadena de Abastecimientos|Dibujo para Ingeniería","Metodología de la Investigación Científica I|Ética y Responsabilidad Social|Análisis e Interpretación de Estados Financieros|Electivo I|Ingeniería de Métodos I|Disposición de Planta","Metodología de la Investigación Científica II|Estrategia e Innovación|Gerencia de Proyectos|Metodologías Ágiles|Ingeniería de Métodos II","Trabajo de Investigación I|Formulación de Proyecto Emprendedor|Transformación Digital|Electivo II|Gestión Integral de Operaciones y Proyectos Industriales","Trabajo de Investigación II|Implementación de Proyecto Emprendedor|Prácticas Preprofesionales"],
+g:"Bachiller en Ingeniería Industrial",t:"Ingeniero(a) Industrial"}};
+const WHY=[["Laboratorios especializados","De IA y Ciberseguridad."],["Certificaciones progresivas","Cisco | Oracle | Microsoft."],["Convenios nacionales e internacionales","Más viajes y visitas académicas internacionales."],["Docentes del MIT (India)","Aprendizaje presencial con doctores de la cuna de la programación."],["Master Class internacionales","Clases espejo, webinars y congresos."],["Cultura emprendedora","Ruta emprendedora con feria y proyecto propio."],["Visitas técnicas y viajes","A empresas y al extranjero."],["Bootcamps y Hackatons","Concursos locales, nacionales e internacionales."]];
+const TABS=[["perfil","Perfil"],["trabajo","Dónde trabajar"],["porque","¿Por qué esta carrera?"],["malla","Malla curricular"],["certs","Certificaciones"]];
+const $=s=>document.querySelector(s);
+let cur="ia",tab="perfil";
+const P={
+perfil:c=>`<div class="g2"><div><p style="font-size:1.1rem">${c.d}</p><div class="box"><h3>Mi enfoque</h3><p>${c.foco}.</p></div></div>
+<div><div class="box"><h3>Un reto, tu mirada</h3><p>${c.reto}</p></div><div class="box" style="margin-top:14px"><h3>Al terminar obtienes</h3><p><b>Grado:</b> ${c.g}<br><b>Título:</b> ${c.t}</p></div></div></div>`,
+trabajo:c=>`<p class="lead">El profesional egresado podrá desempeñarse como:</p><ul class="jobs">${c.jobs.map(j=>`<li>${j}</li>`).join("")}</ul><div class="note">${c.sl}</div>`,
+porque:c=>`<p style="font-size:1.1rem">Desarrollas competencias para: ${c.comp.charAt(0).toLowerCase()+c.comp.slice(1)}</p><div class="ben">${WHY.map(w=>`<div><b>${w[0]}</b><small>${w[1]}</small></div>`).join("")}</div>`,
+malla:c=>`<div class="tools"><input id="fl" type="search" placeholder="Buscar un curso (ej. Marketing, Cloud…)" aria-label="Buscar curso"><span style="color:var(--mu)">10 ciclos · Bachiller y título profesional</span></div>
+<div class="malla">${c.m.map((m,i)=>`<div class="cy"><h4>${["I","II","III","IV","V","VI","VII","VIII","IX","X"][i]} CICLO</h4><ul>${m.split("|").map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("")}</div>
+<p class="note" style="margin-top:20px">Grado académico: ${c.g} · Título profesional: ${c.t}</p>`,
+certs:c=>`<p class="lead">${SH.tag}. Tu formación, respaldada en cada etapa.</p><div class="g2"><div><h3 style="color:var(--ac)">Certificaciones</h3><ul class="tl">${c.cert.map(x=>`<li><span class="tg">Ciclos ${x[0]}</span><h4>${x[1]}</h4><p>Competencias que acreditas:</p><ul>${x[2].map(s=>`<li>${s}</li>`).join("")}</ul></li>`).join("")}</ul></div>
+<div><h3 style="color:var(--ac)">Microcertificaciones · cada 2 ciclos, un nuevo logro</h3><ul class="tl">${c.mic.map(x=>`<li><span class="tg">Ciclos ${x[0]}</span><h4>${x[1]}</h4><p><b>Producto demostrable:</b> ${x[2]}</p></li>`).join("")}</ul></div></div>`
+};
+function show(){const c=D[cur];$("#dt").textContent=c.n;$("#dg").textContent=c.tag;
+$("#tabs").innerHTML=TABS.map(t=>`<button role="tab" id="t-${t[0]}" aria-selected="${t[0]==tab}" tabindex="${t[0]==tab?0:-1}" data-t="${t[0]}">${t[1]}</button>`).join("");
+$("#pn").innerHTML=P[tab](c);$("#pn").setAttribute("aria-labelledby","t-"+tab);
+const f=$("#fl");if(f)f.oninput=()=>{const q=f.value.trim().toLowerCase();document.querySelectorAll(".cy").forEach(b=>{let n=0;b.querySelectorAll("li").forEach(l=>{const h=q&&l.textContent.toLowerCase().includes(q);l.classList.toggle("hit",!!h);n+=h?1:0});b.classList.toggle("dim",!!q&&!n)})};
+document.querySelectorAll("#cards .cc").forEach(b=>b.setAttribute("aria-pressed",b.dataset.k==cur));}
+function pick(k,go){cur=k;tab="perfil";try{localStorage.setItem("uma-c",k)}catch(e){}show();if(go)$("#det").scrollIntoView({behavior:"smooth"})}
+$("#cards").innerHTML=Object.keys(D).map(k=>`<button class="cc" data-k="${k}" aria-pressed="false"><div class="ic">${D[k].ab}</div><h3>${D[k].n}</h3><p>${D[k].foco}.</p></button>`).join("");
+$("#cards").onclick=e=>{const b=e.target.closest(".cc");if(b)pick(b.dataset.k,true)};
+$("#tabs").onclick=e=>{const b=e.target.closest("button");if(b){tab=b.dataset.t;show();$("#t-"+tab).focus()}};
+$("#tabs").onkeydown=e=>{const i=TABS.findIndex(t=>t[0]==tab),n={ArrowRight:1,ArrowLeft:-1}[e.key];if(n){tab=TABS[(i+n+TABS.length)%TABS.length][0];show();$("#t-"+tab).focus()}};
+$("#cmp").innerHTML=Object.keys(D).map(k=>{const c=D[k];return`<article><h3>${c.n}</h3><dl><dt>Qué haces</dt><dd>${c.tag}</dd><dt>Foco</dt><dd>${c.foco}</dd><dt>En el reto de rutas</dt><dd>${c.reto}</dd></dl><button class="btn o" data-k="${k}" type="button" onclick="pick('${k}',true)">Ver ${c.ab==="IND"?"Industrial":c.ab}</button></article>`}).join("");
+$("#wg").innerHTML=WHY.map(w=>`<div><b>${w[0]}</b>${w[1]}</div>`).join("");
+const Q=[["¿Qué te gustaría crear?",["Una aplicación o sistema que organice la información de una empresa","Un asistente inteligente que aprenda de los datos","Un proceso más rápido, barato y eficiente"]],["¿Qué te entusiasma más?",["Programar, diseñar bases de datos y redes","Machine learning, ciencia de datos e IA generativa","Calidad, logística, costos y mejora continua"]],["¿Dónde te ves en el futuro?",["Dirigiendo la infraestructura o la arquitectura cloud de una organización","Como consultor de IA o analista de datos","Como gerente de operaciones o de proyectos"]]];
+const KEYS=["sis","ia","ind"];
+$("#qs").innerHTML=Q.map((q,i)=>`<fieldset class="qq" style="border:0;padding:0"><legend><b>${i+1}. ${q[0]}</b></legend>${q[1].map((o,j)=>`<label><input type="radio" name="q${i}" value="${j}"> ${o}</label>`).join("")}</fieldset>`).join("");
+$("#qb").onclick=()=>{const s=[0,0,0];let a=0;Q.forEach((_,i)=>{const r=document.querySelector(`input[name=q${i}]:checked`);if(r){s[r.value]++;a++}});
+if(a<3){$("#qr").textContent="Responde las 3 preguntas para ver tu resultado.";return}
+const k=KEYS[s.indexOf(Math.max(...s))];$("#qr").innerHTML=`Tu perfil se acerca a <b>${D[k].n}</b>. <a href="#det" onclick="pick('${k}',false)">Ver la carrera</a>`};
+$("#bg").onclick=()=>{const o=$("#menu").classList.toggle("open");$("#bg").setAttribute("aria-expanded",o)};
+$("#menu").onclick=e=>{if(e.target.tagName=="A")$("#menu").classList.remove("open")};
+function fromHash(){const h=location.hash.slice(1);if(D[h]){pick(h,false);return true}return false}
+addEventListener("hashchange",fromHash);
+if(!fromHash()){let k="ia";try{k=localStorage.getItem("uma-c")||"ia"}catch(e){}cur=D[k]?k:"ia";show()}
+</script>
+</body>
+</html>
