@@ -52,9 +52,26 @@ details.q summary{cursor:pointer;font-weight:700;color:var(--ac)}
 .qq label:has(input:checked){background:var(--tint);border-color:var(--brand)}
 #qr{font-weight:600;color:var(--ac);margin-top:14px}
 #det{background:var(--sf);border-top:4px solid var(--brand)}
-.dh{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:18px}
-.dh h2{font-size:clamp(1.6rem,4vw,2.4rem);color:var(--ac);margin:0}
-.dh p{margin:4px 0 0;color:var(--mu)}
+.bn{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;position:relative;overflow:hidden;color:#fff;border-radius:22px;padding:30px 28px;margin-bottom:24px;background:linear-gradient(135deg,var(--deep),var(--wine))}
+.bn[data-k="ia"]{background:linear-gradient(135deg,var(--deep),#9a0f38 70%,var(--brand))}
+.bn[data-k="sis"]{background:linear-gradient(160deg,var(--wine),var(--deep) 60%,#6a0c33)}
+.bn[data-k="ind"]{background:linear-gradient(110deg,var(--deep),var(--wine) 45%,var(--brand))}
+.bn::after{content:attr(data-ab);position:absolute;right:16px;bottom:-26px;font-size:clamp(6rem,18vw,11rem);font-weight:900;opacity:.12;line-height:1;pointer-events:none}
+.bn>*{position:relative;z-index:1}
+.bn h2{font-size:clamp(1.6rem,4vw,2.5rem);color:#fff;margin:8px 0 6px}
+.bn p{margin:0;max-width:52ch;opacity:.95}
+.eb{font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;background:rgba(255,255,255,.18);padding:3px 12px;border-radius:99px}
+.bn .chips{margin:16px 0 0}
+.bn .btn{margin:0;background:#fff;color:var(--wine)}
+.bn .btn:hover{background:#ffe3ea}
+.tot{background:var(--sf);border:2px solid var(--brand);border-radius:20px;padding:28px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.tot b{font-size:clamp(4rem,12vw,6.5rem);line-height:1;color:var(--brand)}
+.tot span{font-weight:700;color:var(--ac)}
+.bars{list-style:none;margin:0;padding:0}
+.bars li{display:grid;grid-template-columns:110px 1fr 30px;gap:10px;align-items:center;margin:7px 0;font-size:.92rem}
+.br{background:var(--bd);border-radius:99px;height:12px;overflow:hidden}
+.br i{display:block;height:100%;background:linear-gradient(90deg,var(--wine),var(--brand));border-radius:99px}
+.bars b{color:var(--ac);text-align:right}
 .tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;border-bottom:2px solid var(--bd);margin-bottom:26px}
 .tabs button{flex:none;background:none;border:0;border-radius:99px;padding:10px 18px;font:inherit;font-weight:600;color:var(--mu);cursor:pointer}
 .tabs button[aria-selected="true"]{background:var(--brand);color:#fff}
@@ -114,7 +131,7 @@ section{padding:42px 0}
 <a class="logo" href="#inicio">UMA <b>Ingeniería</b> 2027</a>
 <button id="bg" aria-expanded="false" aria-controls="menu">Menú</button>
 <nav aria-label="Principal"><ul id="menu">
-<li><a href="#carreras">Carreras</a></li><li><a href="#comparar">Comparar</a></li><li><a href="#porque">Por qué UMA</a></li></ul></nav>
+<li><a href="#carreras">Carreras</a></li><li><a href="#comparar">Comparar</a></li><li><a href="#convenios">Convenios</a></li><li><a href="#porque">Por qué UMA</a></li></ul></nav>
 </div></header>
 
 <main id="inicio">
@@ -134,7 +151,7 @@ section{padding:42px 0}
 </div></section>
 
 <section id="det" aria-live="polite"><div class="w">
-<div class="dh"><div><h2 id="dt"></h2><p id="dg"></p></div><a class="btn o" href="#comparar" style="margin:0">Comparar carreras</a></div>
+<div class="bn" id="bn"><div><span class="eb">Carrera profesional</span><h2 id="dt"></h2><p id="dg"></p><div class="chips" id="bc"></div></div><a class="btn" href="#comparar">Comparar carreras</a></div>
 <div class="tabs" role="tablist" id="tabs"></div>
 <div id="pn" role="tabpanel" tabindex="0"></div>
 </div></section>
@@ -143,6 +160,13 @@ section{padding:42px 0}
 <h2 class="sh">Cómo se diferencia cada carrera</h2>
 <p class="lead">Un mismo reto, tres formas de resolverlo: ayudar a una empresa a optimizar sus rutas de reparto.</p>
 <div class="cmp" id="cmp"></div>
+</div></section>
+
+<section id="convenios"><div class="w">
+<h2 class="sh">Convenios internacionales</h2>
+<p class="lead">Convenios con universidades de Latinoamérica, Europa, India y Estados Unidos que abren la puerta a master class, visitas académicas y misiones académicas internacionales.</p>
+<div class="g2"><div class="tot"><b>57</b><span>convenios en 14 países</span></div><ul class="bars" id="cvl" aria-label="Convenios por país"></ul></div>
+<div class="note" style="margin-top:22px">Misiones Académicas Internacionales: experiencia académica y cultural en Colombia y Chile.</div>
 </div></section>
 
 <section id="porque" class="wy"><div class="w">
@@ -207,7 +231,7 @@ malla:c=>`<div class="tools"><input id="fl" type="search" placeholder="Buscar un
 certs:c=>`<p class="lead">${SH.tag}. Tu formación, respaldada en cada etapa.</p><div class="g2"><div><h3 style="color:var(--ac)">Certificaciones</h3><ul class="tl">${c.cert.map(x=>`<li><span class="tg">Ciclos ${x[0]}</span><h4>${x[1]}</h4><p>Competencias que acreditas:</p><ul>${x[2].map(s=>`<li>${s}</li>`).join("")}</ul></li>`).join("")}</ul></div>
 <div><h3 style="color:var(--ac)">Microcertificaciones · cada 2 ciclos, un nuevo logro</h3><ul class="tl">${c.mic.map(x=>`<li><span class="tg">Ciclos ${x[0]}</span><h4>${x[1]}</h4><p><b>Producto demostrable:</b> ${x[2]}</p></li>`).join("")}</ul></div></div>`
 };
-function show(){const c=D[cur];$("#dt").textContent=c.n;$("#dg").textContent=c.tag;
+function show(){const c=D[cur];$("#dt").textContent=c.n;$("#dg").textContent=c.tag;$("#bn").dataset.k=cur;$("#bn").dataset.ab=c.ab;$("#bc").innerHTML=["10 ciclos","Bachiller + título profesional","Certificaciones progresivas","Inicio abril 2027-1"].map(x=>`<span>${x}</span>`).join("");
 $("#tabs").innerHTML=TABS.map(t=>`<button role="tab" id="t-${t[0]}" aria-selected="${t[0]==tab}" tabindex="${t[0]==tab?0:-1}" data-t="${t[0]}">${t[1]}</button>`).join("");
 $("#pn").innerHTML=P[tab](c);$("#pn").setAttribute("aria-labelledby","t-"+tab);
 const f=$("#fl");if(f)f.oninput=()=>{const q=f.value.trim().toLowerCase();document.querySelectorAll(".cy").forEach(b=>{let n=0;b.querySelectorAll("li").forEach(l=>{const h=q&&l.textContent.toLowerCase().includes(q);l.classList.toggle("hit",!!h);n+=h?1:0});b.classList.toggle("dim",!!q&&!n)})};
@@ -218,6 +242,7 @@ $("#cards").onclick=e=>{const b=e.target.closest(".cc");if(b)pick(b.dataset.k,tr
 $("#tabs").onclick=e=>{const b=e.target.closest("button");if(b){tab=b.dataset.t;show();$("#t-"+tab).focus()}};
 $("#tabs").onkeydown=e=>{const i=TABS.findIndex(t=>t[0]==tab),n={ArrowRight:1,ArrowLeft:-1}[e.key];if(n){tab=TABS[(i+n+TABS.length)%TABS.length][0];show();$("#t-"+tab).focus()}};
 $("#cmp").innerHTML=Object.keys(D).map(k=>{const c=D[k];return`<article><h3>${c.n}</h3><dl><dt>Qué haces</dt><dd>${c.tag}</dd><dt>Foco</dt><dd>${c.foco}</dd><dt>En el reto de rutas</dt><dd>${c.reto}</dd></dl><button class="btn o" data-k="${k}" type="button" onclick="pick('${k}',true)">Ver ${c.ab==="IND"?"Industrial":c.ab}</button></article>`}).join("");
+$("#cvl").innerHTML=[["Colombia",18],["India",11],["México",8],["Argentina",4],["España",3],["Portugal",3],["Bolivia",2],["Costa Rica",2],["Brasil",1],["Chile",1],["Ecuador",1],["Estados Unidos",1],["Paraguay",1],["Uruguay",1]].map(p=>`<li><span>${p[0]}</span><div class="br"><i style="width:${p[1]/18*100}%"></i></div><b>${p[1]}</b></li>`).join("");
 $("#wg").innerHTML=WHY.map(w=>`<div><b>${w[0]}</b>${w[1]}</div>`).join("");
 const Q=[["¿Qué te gustaría crear?",["Una aplicación o sistema que organice la información de una empresa","Un asistente inteligente que aprenda de los datos","Un proceso más rápido, barato y eficiente"]],["¿Qué te entusiasma más?",["Programar, diseñar bases de datos y redes","Machine learning, ciencia de datos e IA generativa","Calidad, logística, costos y mejora continua"]],["¿Dónde te ves en el futuro?",["Dirigiendo la infraestructura o la arquitectura cloud de una organización","Como consultor de IA o analista de datos","Como gerente de operaciones o de proyectos"]]];
 const KEYS=["sis","ia","ind"];
