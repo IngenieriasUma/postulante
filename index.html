@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ingenierías UMA 2027 · Elige tu carrera</title>
+<title>Ingenierías UMA</title>
+<link rel="icon" href="uma.png" type="image/png" size="32x42">
 <meta name="description" content="Conoce el perfil, campo laboral, malla curricular y certificaciones de las ingenierías de la Universidad María Auxiliadora.">
 <style>
 :root{--brand:#EC244F;--wine:#7E0225;--deep:#470C28;--bg:#F7F3F4;--sf:#fff;--tx:#2a1119;--mu:#6b4b56;--ac:#7E0225;--bd:#ead9de;--tint:#fde8ed;
@@ -19,16 +20,16 @@ h1,h2,h3{line-height:1.2;margin:0 0 .5em}
 .w{max-width:1120px;margin:0 auto;padding:0 20px}
 section{padding:56px 0}
 .sh{font-size:clamp(1.5rem,3.5vw,2.1rem);color:var(--ac)}
-.lead{color:var(--mu);max-width:62ch;margin:0 0 28px}
+.lead{color:var(--mu);margin:0 0 28px}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--deep);color:#fff}
-.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
-.logo{font-weight:800;letter-spacing:.5px;text-decoration:none}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;padding: 5px;}
+.logo{font-weight:800;letter-spacing:.5px;text-decoration:none; font-size: 24px; vertical-align: middle; display: flex;}
 .logo b{color:var(--brand)}
 nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
 nav a{display:block;padding:10px 14px;border-radius:99px;text-decoration:none;font-size:.95rem}
 nav a:hover,nav a:focus-visible{background:rgba(255,255,255,.14)}
 #bg{display:none;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:10px;padding:8px 12px;font:inherit;cursor:pointer}
-.hero{background:radial-gradient(circle at 85% 10%,rgba(236,36,79,.55),transparent 45%),linear-gradient(135deg,var(--deep),var(--wine));color:#fff;padding:72px 0 64px}
+.hero{background:radial-gradient(circle at 85% 10%,rgba(236,36,79,.55),transparent 45%),linear-gradient(135deg,var(--deep),var(--wine));color:#fff;padding:40px 0 64px}
 .hero h1{font-size:clamp(2rem,6vw,3.6rem);max-width:15ch}
 .hero h1 span{color:#ff8fa8}
 .hero p{max-width:56ch;font-size:1.1rem;opacity:.92}
@@ -59,7 +60,7 @@ details.q summary{cursor:pointer;font-weight:700;color:var(--ac)}
 .bn::after{content:attr(data-ab);position:absolute;right:16px;bottom:-26px;font-size:clamp(6rem,18vw,11rem);font-weight:900;opacity:.12;line-height:1;pointer-events:none}
 .bn>*{position:relative;z-index:1}
 .bn h2{font-size:clamp(1.6rem,4vw,2.5rem);color:#fff;margin:8px 0 6px}
-.bn p{margin:0;max-width:52ch;opacity:.95}
+.bn p{margin:0;opacity:.95}
 .eb{font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;background:rgba(255,255,255,.18);padding:3px 12px;border-radius:99px}
 .bn .chips{margin:16px 0 0}
 .bn .btn{margin:0;background:#fff;color:var(--wine)}
@@ -128,17 +129,18 @@ section{padding:42px 0}
 </head>
 <body>
 <header><div class="w nav">
-<a class="logo" href="#inicio">UMA <b>Ingeniería</b> 2027</a>
-<button id="bg" aria-expanded="false" aria-controls="menu">Menú</button>
+<a class="logo" href="#inicio"><img src="uma.png" height="50px"></a>
 <nav aria-label="Principal"><ul id="menu">
-<li><a href="#carreras">Carreras</a></li><li><a href="#comparar">Comparar</a></li><li><a href="#convenios">Convenios</a></li><li><a href="#porque">Por qué UMA</a></li></ul></nav>
+<li><a href="#carreras">Carreras</a></li><li><a href="#comparar">Comparar</a></li><li><a href="#porque">Por qué UMA</a></li><li><a href="#convenios">Convenios</a></li></ul></nav>
+<button id="bg" aria-expanded="false" aria-controls="menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg></button>
 </div></header>
 
 <main id="inicio">
 <div class="hero"><div class="w">
 <h1>¿Quién quieres <span>ser hoy?</span></h1>
-<p>Formamos ingenieros para un mundo más humano y tecnológico. Explora cada carrera de la Facultad de Ingeniería y compara perfil, campo laboral, malla y certificaciones antes de decidir.</p>
-<div class="chips"><span>3 carreras</span><span>10 ciclos</span><span>Inicio: abril 2027-1</span></div>
+<p>Formamos ingenieros para un mundo más humano y tecnológico.<br>¿Quieres ser un consumidor de tecnología? o ¿Quieres ser quien la diseñe, cree e implemente?<br>Explora cada carrera de la Facultad de Ingeniería y compara perfil, campo laboral, malla y certificaciones antes de decidir.</p>
+<div class="chips"><span>3 carreras</span><span>10 ciclos</span></div>
 <a class="btn" href="#carreras">Elegir mi carrera</a>
 </div></div>
 
@@ -162,6 +164,14 @@ section{padding:42px 0}
 <div class="cmp" id="cmp"></div>
 </div></section>
 
+<section id="porque" class="wy"><div class="w">
+<h2 class="sh">¿Por qué estudiar ingeniería en la UMA?</h2>
+<p class="lead">Tus trabajos no son solo para aprobar cursos: son para concursar y emprender. Nosotros no compramos tecnología, la creamos.</p>
+<div class="wg" id="wg"></div>
+<p style="margin-top:24px">Estudiantes de la UMA ya destacan:<br><b>2.º puesto en “Hackaton”</b> (S/ 5,500.00, 5.º ciclo) <br><b>1.er puesto en “Feria Emprendedora”</b> (S/ 7,500.00, 6.º ciclo).</p>
+<p>*Certificaciones y microcertificaciones sujetas a actualizaciones para potenciar tu empleabilidad.</p>
+</div></section>
+
 <section id="convenios"><div class="w">
 <h2 class="sh">Convenios internacionales</h2>
 <p class="lead">Convenios con universidades de Latinoamérica, Europa, India y Estados Unidos que abren la puerta a master class, visitas académicas y misiones académicas internacionales.</p>
@@ -169,16 +179,11 @@ section{padding:42px 0}
 <div class="note" style="margin-top:22px">Misiones Académicas Internacionales: experiencia académica y cultural en Colombia y Chile.</div>
 </div></section>
 
-<section id="porque" class="wy"><div class="w">
-<h2 class="sh">¿Por qué estudiar ingeniería en la UMA?</h2>
-<p class="lead">Tus trabajos no son solo para aprobar cursos: son para concursar y emprender. Nosotros no compramos tecnología, la creamos.</p>
-<div class="wg" id="wg"></div>
-<p style="margin-top:24px">Estudiantes de la UMA ya destacan: <b>2.º puesto en “Hackaton”</b> (S/ 5,500.00, 5.º ciclo) y <b>1.er puesto en “Feria Emprendedora”</b> (S/ 7,500.00, 6.º ciclo).</p>
-</div></section>
+
 </main>
 
-<footer><div class="w"><p><b>Universidad María Auxiliadora · Facultad de Ingeniería.</b> Inicio de clases: abril 2027-1.</p>
-<p>*Certificaciones y microcertificaciones sujetas a actualizaciones para potenciar tu empleabilidad.</p></div></footer>
+<footer><div class="w"><p><b>Universidad María Auxiliadora | Facultad de Ingeniería.</b> Developed by MBA Ing Kimberly Arias Baron</p>
+</div></footer>
 
 <script>
 const SH={tag:"Aprende | Certifícate | Potencia tu futuro"};
@@ -231,7 +236,7 @@ malla:c=>`<div class="tools"><input id="fl" type="search" placeholder="Buscar un
 certs:c=>`<p class="lead">${SH.tag}. Tu formación, respaldada en cada etapa.</p><div class="g2"><div><h3 style="color:var(--ac)">Certificaciones</h3><ul class="tl">${c.cert.map(x=>`<li><span class="tg">Ciclos ${x[0]}</span><h4>${x[1]}</h4><p>Competencias que acreditas:</p><ul>${x[2].map(s=>`<li>${s}</li>`).join("")}</ul></li>`).join("")}</ul></div>
 <div><h3 style="color:var(--ac)">Microcertificaciones · cada 2 ciclos, un nuevo logro</h3><ul class="tl">${c.mic.map(x=>`<li><span class="tg">Ciclos ${x[0]}</span><h4>${x[1]}</h4><p><b>Producto demostrable:</b> ${x[2]}</p></li>`).join("")}</ul></div></div>`
 };
-function show(){const c=D[cur];$("#dt").textContent=c.n;$("#dg").textContent=c.tag;$("#bn").dataset.k=cur;$("#bn").dataset.ab=c.ab;$("#bc").innerHTML=["10 ciclos","Bachiller + título profesional","Certificaciones progresivas","Inicio abril 2027-1"].map(x=>`<span>${x}</span>`).join("");
+function show(){const c=D[cur];$("#dt").textContent=c.n;$("#dg").textContent=c.tag;$("#bn").dataset.k=cur;$("#bn").dataset.ab=c.ab;$("#bc").innerHTML=["10 ciclos","Bachiller + título profesional","Certificaciones progresivas"].map(x=>`<span>${x}</span>`).join("");
 $("#tabs").innerHTML=TABS.map(t=>`<button role="tab" id="t-${t[0]}" aria-selected="${t[0]==tab}" tabindex="${t[0]==tab?0:-1}" data-t="${t[0]}">${t[1]}</button>`).join("");
 $("#pn").innerHTML=P[tab](c);$("#pn").setAttribute("aria-labelledby","t-"+tab);
 const f=$("#fl");if(f)f.oninput=()=>{const q=f.value.trim().toLowerCase();document.querySelectorAll(".cy").forEach(b=>{let n=0;b.querySelectorAll("li").forEach(l=>{const h=q&&l.textContent.toLowerCase().includes(q);l.classList.toggle("hit",!!h);n+=h?1:0});b.classList.toggle("dim",!!q&&!n)})};
